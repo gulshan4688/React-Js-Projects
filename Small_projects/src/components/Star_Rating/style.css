@@ -1,0 +1,16 @@
+.star-Rating{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 30vw;
+    padding-top: 20px;
+    background-color: rgb(45, 34, 34);
+}
+
+.active{
+    color: #fff700;
+}
+
+.inactive{
+    color: aliceblue;
+}
