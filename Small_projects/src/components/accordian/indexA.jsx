@@ -20,10 +20,8 @@ export default function Accordian() {
 
         if (findCurrentIdx === -1) copyArray.push(currentId);
         else copyArray.splice(findCurrentIdx, 1);
-
-
+        
         setMultiSelectedIndices(copyArray);
-
     }
 
     console.log(selected, multiSelectedIndices);
