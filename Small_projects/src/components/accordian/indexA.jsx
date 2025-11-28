@@ -13,6 +13,7 @@ export default function Accordian() {
         // imagine first time when selected is null and currentId is the id u clicked suppose  1 so this condtion becomes falls and 
         // selected is now currentid and when u clicked again on the same id now this condtion becomes true so current id is null now 
     }
+
     const handleMultiSelection = (currentId) => {
         let copyArray = [...multiSelectedIndices];
         const findCurrentIdx = copyArray.indexOf(currentId);
@@ -20,7 +21,7 @@ export default function Accordian() {
 
         if (findCurrentIdx === -1) copyArray.push(currentId);
         else copyArray.splice(findCurrentIdx, 1);
-        
+
         setMultiSelectedIndices(copyArray);
     }
 
@@ -35,9 +36,8 @@ export default function Accordian() {
                 {
                     data && data.length > 0 ?
                         data.map((item, id) => (
-                            <div key={id} onClick={
-                                enableMultiSelection ? () => handleMultiSelection(item.id) : () => handleSingleSelection(item.id)
-                            } className="item">
+                            <div key={id} onClick={enableMultiSelection ? () => handleMultiSelection(item.id) : () => handleSingleSelection(item.id)}
+                                className="item">
                                 <div className="title">
                                     <h3>{item.question}</h3>
                                     <span> + </span>
@@ -49,10 +49,10 @@ export default function Accordian() {
                                 }
                                 {/* {
                                     selected === item.id ?
-                                    <div>
-                                        <p>{item.answer}</p>
-                                    </div>
-                                    : null 
+                                        <div>
+                                            <p>{item.answer}</p>
+                                        </div>
+                                        : null
                                 } */}
                             </div>
 

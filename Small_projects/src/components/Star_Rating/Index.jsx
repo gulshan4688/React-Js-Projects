@@ -17,6 +17,9 @@ const Stars = ({ noOfStars}) => {
         setHover(idx);
         // as soon as the user enters the star at particular index that index is set the hover 
     }
+    function handleMouseLeave(){
+        setHover(rating);
+    }
     
     return <div className="star-Rating" >
         {
@@ -28,6 +31,7 @@ const Stars = ({ noOfStars}) => {
                         className={index <= (rating || hover) ? 'active' : 'inactive' }
                         onClick={() => handleStarClick(index)}
                         onMouseMove={()=>handleMouseEnter(index)}
+                        onMouseLeave={()=>handleMouseLeave()}
                         size={40}
                     />
                 )

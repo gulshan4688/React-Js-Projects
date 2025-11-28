@@ -10,12 +10,12 @@ const App = () => {
 
   return (
     <div>
-      {/* <Accordian/>
-      <Random_Colour/> */}
-      {/* <Stars noOfStars={stars} /> */}
-      <Image_Slider url={'https://picsum.photos/v2/list'} limit={'10'} page={'1'} />
+      {/* <Accordian /> */}
+      {/* <Random_Colour/> */}
+      <Stars noOfStars={stars} />
+      {/* <Image_Slider url={'https://picsum.photos/v2/list'} limit={'10'} page={'1'} /> */}
     </div>
   )
 }
 
-export default App
+export default App;
