@@ -1,9 +1,10 @@
 
 import React from 'react'
-import Accordian from './components/accordian/indexA'
-import Random_Colour from './components/Random_Colour/Index'
-import Stars from './components/Star_Rating/Index'
-import Image_Slider from './components/Image_slider'
+import Accordian from './components/1.accordian/indexA'
+import Random_Colour from './components/2.Random_Colour/Index'
+import Stars from './components/3.Star_Rating/Index'
+import Image_Slider from './components/4.Image_slider'
+import LoadMoreData from './components/5.Load_more_data'
 
 const App = () => {
   const stars = 10;
@@ -12,8 +13,9 @@ const App = () => {
     <div>
       {/* <Accordian /> */}
       {/* <Random_Colour/> */}
-      <Stars noOfStars={stars} />
-      {/* <Image_Slider url={'https://picsum.photos/v2/list'} limit={'10'} page={'1'} /> */}
+      {/* <Stars noOfStars={stars} /> */}
+      {/* <Image_Slider url={'https://picsum.photos/v2/list'} limit={'20'} page={'1'} /> */}
+      <LoadMoreData url={'https://dummyjson.com/products?limit=10&skip=10&select=title,price'} />
     </div>
   )
 }

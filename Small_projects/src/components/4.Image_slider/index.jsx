@@ -5,7 +5,7 @@ import './style.css'
 export default function Image_Slider({ url, limit = 5, page = 1 }) {
 
     const [images, setImages] = useState([]);
-    const [currentSlide, setCurrenSlide] = useState(0);
+    const [currentSlide, setCurrenSlide] = useState(1);
     const [errorMsg, setErrorMsg] = useState(null);
     const [loading, setLoading] = useState(false);
     // const [pages, setPages] = useState(1);
@@ -15,7 +15,6 @@ export default function Image_Slider({ url, limit = 5, page = 1 }) {
             setLoading(1);
             const response = await fetch(`${getUrl}?page=4&limit=${limit}`);
             const data = await response.json();
-            console.log(data);
             if (data) {
                 setImages(data);
                 setLoading(0)
@@ -40,9 +39,11 @@ export default function Image_Slider({ url, limit = 5, page = 1 }) {
     }
     function handlePrev() {
         setCurrenSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
+        console.log(currentSlide);
     }
     function handleNext() {
         setCurrenSlide(currentSlide === images.length -1 ? 0 : currentSlide + 1);
+        console.log(currentSlide);
     }
 
     return (
