@@ -5,6 +5,7 @@ import Random_Colour from './components/2.Random_Colour/Index'
 import Stars from './components/3.Star_Rating/Index'
 import Image_Slider from './components/4.Image_slider'
 import LoadMoreData from './components/5.Load_more_data'
+import TreeView from './components/6.tree-view'
 
 const App = () => {
   const stars = 10;
@@ -15,7 +16,8 @@ const App = () => {
       {/* <Random_Colour/> */}
       {/* <Stars noOfStars={stars} /> */}
       {/* <Image_Slider url={'https://picsum.photos/v2/list'} limit={'20'} page={'1'} /> */}
-      <LoadMoreData url={'https://dummyjson.com/products?limit=10&skip=10&select=title,price'} />
+      {/* <LoadMoreData url={'https://dummyjson.com/products?limit=10&skip=10&select=title,price'} /> */}
+      <TreeView/>
     </div>
   )
 }

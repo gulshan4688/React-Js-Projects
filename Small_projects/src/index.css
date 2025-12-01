@@ -1,9 +1,15 @@
-body,
-html {
-  padding: 0;
+* {
   margin: 0;
-  height: 100vw;
-  width: 100vw;
-  background-color: black;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html,
+body {
+  width: 100%;
+  /* min-height: 100%; */
+  /* overflow-x: hidden; */
+  /* <-- fixes horizontal scrollbar */
+  background: black;
   color: white;
 }
