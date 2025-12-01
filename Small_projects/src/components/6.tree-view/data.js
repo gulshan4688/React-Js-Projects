@@ -1,4 +1,8 @@
-const menus = [
+export const menus = [
+  {
+    label: "Home",
+    to: "/",
+  },
   {
     label: "Profile",
     to: "/profile",
@@ -10,12 +14,17 @@ const menus = [
           {
             label: "Location",
             to: "location",
+            children: [
+              {
+                label: "City",
+                to: "city",
+              },
+            ],
           },
         ],
       },
     ],
   },
-
   {
     label: "Settings",
     to: "/settings",
@@ -35,6 +44,12 @@ const menus = [
           {
             label: "Register",
             to: "register",
+            children : [
+                {
+                    label : 'Random data',
+                    to : ''
+                }
+            ]
           },
         ],
       },
@@ -42,6 +57,4 @@ const menus = [
   },
 ];
 
-
-export default menus ;
- 
+export default menus;

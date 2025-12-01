@@ -6,7 +6,8 @@ import Stars from './components/3.Star_Rating/Index'
 import Image_Slider from './components/4.Image_slider'
 import LoadMoreData from './components/5.Load_more_data'
 import TreeView from './components/6.tree-view'
-
+import menus from './components/6.tree-view/data'
+import QrCode from './components/7.qr-code-generator'
 const App = () => {
   const stars = 10;
 
@@ -17,7 +18,9 @@ const App = () => {
       {/* <Stars noOfStars={stars} /> */}
       {/* <Image_Slider url={'https://picsum.photos/v2/list'} limit={'20'} page={'1'} /> */}
       {/* <LoadMoreData url={'https://dummyjson.com/products?limit=10&skip=10&select=title,price'} /> */}
-      <TreeView/>
+      {/* <TreeView menus={menus} /> */}
+      <QrCode/>
+
     </div>
   )
 }
