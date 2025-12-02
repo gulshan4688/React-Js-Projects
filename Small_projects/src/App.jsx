@@ -11,6 +11,8 @@ import QrCode from './components/7.qr-code-generator'
 import LightDarkTheme from './components/8.lightDarkTheme'
 import Scroll from './components/9.scroll-animation'
 import TabsTest from './components/10.tab-view/tabs-test'
+import ModalTest from './components/11.Custom-Modal/Modal-test'
+import GithubProfileFinder from './components/12.github-profile-finder'
 
 
 const App = () => {
@@ -27,7 +29,9 @@ const App = () => {
       <QrCode/>
       <LightDarkTheme /> */}
       {/* <Scroll url={'https://dummyjson.com/products'} /> */}
-      <TabsTest/>
+      {/* <TabsTest /> */}
+      {/* <ModalTest /> */}
+      <GithubProfileFinder />
     </div>
   )
 }
