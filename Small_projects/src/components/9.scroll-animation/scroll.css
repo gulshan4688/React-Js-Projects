@@ -1,0 +1,41 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+} */
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.top-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: #055108;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(44, 228, 121);
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: rgb(169, 18, 147);
+    width: 0%;
+}

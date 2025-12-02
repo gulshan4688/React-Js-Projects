@@ -1,0 +1,20 @@
+.wrapper{
+    padding: 8px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.tab-item{
+    /* border: 1px solid grey; */
+    background-color: grey;
+    padding: 10px 19px;
+    font-size: 20px;
+
+}
+
+.active{
+    background-color: rgb(224, 65, 65);
+}

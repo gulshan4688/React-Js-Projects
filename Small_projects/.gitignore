@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# DO NOT ignore all .json — remove this
+# *.json   ❌ REMOVE THIS
+
+# Ignore only lock-files (optional)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,7 +30,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-package-lock.json
-*.json
-package-lock.json
