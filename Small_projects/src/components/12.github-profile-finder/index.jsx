@@ -3,7 +3,7 @@ import './styles.css'
 import User from './user';
 
 const GithubProfileFinder = () => {
-  const [username, setUsername] = useState('smmajnar123');
+  const [username, setUsername] = useState('gulshan4688');
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -24,7 +24,7 @@ const GithubProfileFinder = () => {
   }
   useEffect(() => {
     fetchGithubDetails();
-  }, [])
+  }, [username])
 
   if (loading) {
     <h1>Loading please wait</h1>
@@ -43,7 +43,7 @@ const GithubProfileFinder = () => {
         </button>
       </div>
       {
-        userData !== null ? <User user={userData} /> : null
+        userData !== null ? <User userData={userData} /> : null
       }
     </div>
   )

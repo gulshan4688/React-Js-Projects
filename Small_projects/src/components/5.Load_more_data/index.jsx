@@ -54,7 +54,7 @@ const LoadMoreData = ({ url }) => {
                             </div>
                         )
                     })
-                    : null
+                : null
                 }
             </div>
             <div className="button-container">

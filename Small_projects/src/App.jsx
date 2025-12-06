@@ -13,6 +13,8 @@ import Scroll from './components/9.scroll-animation'
 import TabsTest from './components/10.tab-view/tabs-test'
 import ModalTest from './components/11.Custom-Modal/Modal-test'
 import GithubProfileFinder from './components/12.github-profile-finder'
+import SearchAutoComplete from './components/13.Auto-complete/Index'
+import TicTacToe from './components/Tic-tac-toe'
 
 
 const App = () => {
@@ -31,7 +33,9 @@ const App = () => {
       {/* <Scroll url={'https://dummyjson.com/products'} /> */}
       {/* <TabsTest /> */}
       {/* <ModalTest /> */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+      {/* <SearchAutoComplete/> */}
+      <TicTacToe />
     </div>
   )
 }
