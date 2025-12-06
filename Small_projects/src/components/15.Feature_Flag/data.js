@@ -7,7 +7,7 @@ const dummyApiResponse = {
 
 function featureFlagsDataServiceCall() {
     return new Promise((resolve, reject) => {
-        if (dummyApiResponse) setTimeout(resolve(dummyApiResponse), 500);
+        if (dummyApiResponse) setTimeout(resolve(dummyApiResponse), 50);
         else reject('some error occured please try again later');
     })
 }

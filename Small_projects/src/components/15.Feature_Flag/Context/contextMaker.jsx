@@ -9,23 +9,24 @@ const FeatureFlagGlobalState = ({ children }) => {
     
     const [loading, setLoading] = useState(false);
     const [enabledFlags, setEnabledFlags] = useState({});
+
     async function fetchFeatureFlag() {
         try {
             setLoading(true);
-            const response = await featureFlagsDataServiceCall;
+            const response = await featureFlagsDataServiceCall();
             setEnabledFlags(response);
             console.log(response);
             setLoading(false);
         } catch (er) {
             console.log(er);
-            throw new Error(er);
             setLoading(false);
+            throw new Error(er);
         }
     }
     useEffect(() => {
         fetchFeatureFlag();
     }, [])
-    
+      
     return (
         <FeatureFlagsContext.Provider value={{ loading, enabledFlags }} >
             {children}

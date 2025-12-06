@@ -28,16 +28,20 @@ const FeatureFlag = () => {
       component: <Accordian />
     }
   ]
-  function checkEnabledFlags(getCurrentKey){
+  function checkEnabledFlags(getCurrentKey) {
     return enabledFlags[getCurrentKey]
   }
+
   if (loading) <h1>Loading !!! please wait </h1>
+  
   return (
     <div>
-      {
+      { 
         componentsToRender.map(item => (
-         checkEnabledFlags(item.key) ? item.component : null 
-      ))
+          checkEnabledFlags(item.key) ?
+            <div key={item.key} >{item.component} </div>
+            : null
+        ))
       }
     </div>
   )
