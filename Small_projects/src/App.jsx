@@ -14,8 +14,9 @@ import TabsTest from './components/10.tab-view/tabs-test'
 import ModalTest from './components/11.Custom-Modal/Modal-test'
 import GithubProfileFinder from './components/12.github-profile-finder'
 import SearchAutoComplete from './components/13.Auto-complete/Index'
-import TicTacToe from './components/Tic-tac-toe'
-
+import FeatureFlagGlobalState from './components/15.Feature_Flag/Context/contextMaker'
+import FeatureFlag from './components/15.Feature_Flag/FeatureFlag'
+// import TicTacToe from './components/Tic-tac-toe'
 
 const App = () => {
   const stars = 10;
@@ -35,7 +36,10 @@ const App = () => {
       {/* <ModalTest /> */}
       {/* <GithubProfileFinder /> */}
       {/* <SearchAutoComplete/> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+       <FeatureFlagGlobalState>
+        <FeatureFlag />
+      </FeatureFlagGlobalState> 
     </div>
   )
 }
