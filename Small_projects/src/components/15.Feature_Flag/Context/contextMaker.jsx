@@ -23,6 +23,7 @@ const FeatureFlagGlobalState = ({ children }) => {
             throw new Error(er);
         }
     }
+    
     useEffect(() => {
         fetchFeatureFlag();
     }, [])

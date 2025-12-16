@@ -43,11 +43,11 @@ export default function Scroll({ url }) {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', () => { })
+            window.removeEventListener('scroll', handleScroll)
         }
     }, [])
 
-    console.log(scrollPercentage*100);
+    console.log(scrollPercentage);
 
     return (
         <div>
