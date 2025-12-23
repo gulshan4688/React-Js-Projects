@@ -16,7 +16,9 @@ import GithubProfileFinder from './components/12.github-profile-finder'
 import SearchAutoComplete from './components/13.Auto-complete/Index'
 import FeatureFlagGlobalState from './components/15.Feature_Flag/Context/contextMaker'
 import FeatureFlag from './components/15.Feature_Flag/FeatureFlag'
+import UseFetchHookTest from './components/16.use-Fetch/test'
 // import TicTacToe from './components/Tic-tac-toe'
+
 
 const App = () => {
   const stars = 10;
@@ -31,7 +33,7 @@ const App = () => {
       <TreeView menus={menus} />
       <QrCode/>
       <LightDarkTheme /> */}
-      <Scroll url={'https://dummyjson.com/products'} />
+      {/* <Scroll url={'https://dummyjson.com/products'} /> */}
       {/* <TabsTest /> */}
       {/* <ModalTest /> */}
       {/* <GithubProfileFinder /> */}
@@ -40,6 +42,8 @@ const App = () => {
        {/* <FeatureFlagGlobalState>
         <FeatureFlag />
       </FeatureFlagGlobalState>  */}
+      <UseFetchHookTest/>
+
     </div>
   )
 }

@@ -12,6 +12,7 @@ const FeatureFlagGlobalState = ({ children }) => {
 
     async function fetchFeatureFlag() {
         try {
+            // fetching data d
             setLoading(true);
             const response = await featureFlagsDataServiceCall();
             setEnabledFlags(response);
@@ -23,7 +24,7 @@ const FeatureFlagGlobalState = ({ children }) => {
             throw new Error(er);
         }
     }
-    
+
     useEffect(() => {
         fetchFeatureFlag();
     }, [])

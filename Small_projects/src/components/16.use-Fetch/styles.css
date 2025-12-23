@@ -1,0 +1,10 @@
+.useFetchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+}
+.useFetchTitle{
+    margin-top: 20px;
+}
+
